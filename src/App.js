@@ -24,7 +24,7 @@ function App() {
       jobTags.push(...languages);
     }
 
-    return jobTags.some((tag) => filters.includes(tag));
+    return jobTags.every((tag) => filters.includes(tag));
   };
 
   const jobsByCategory = data.filter(filterByCategories);
