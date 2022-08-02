@@ -24,7 +24,8 @@ function App() {
       jobTags.push(...languages);
     }
 
-    return jobTags.some((tag) => filters.includes(tag));
+    // return jobTags.some((tag) => filters.includes(tag));
+    return filters.every((tag) => jobTags.indexOf(tag) !== -1);
   };
 
   const jobsByCategory = data.filter(filterByCategories);
