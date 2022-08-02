@@ -4,7 +4,7 @@ function Search({ filters, deleteFilter, clearFilters }) {
   return (
     <>
       {filters.length ? (
-        <div className="px-6 py-4 flex bg-lightGrayishCyan gap-4 -mt-8 rounded-lg h-auto md:max-w-[700px] md:mx-auto lg:max-w-none">
+        <div className="px-6 py-4 flex bg-white gap-4 -mt-8 rounded-lg h-auto md:max-w-[700px] md:mx-auto lg:max-w-none">
           <div className="flex flex-wrap gap-4">
             {filters.map((category, index) => (
               <button
