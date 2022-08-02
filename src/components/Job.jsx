@@ -57,7 +57,7 @@ function Job({ job, addFilter }) {
                 ''
               )}
             </div>
-            <h3 className="tracking-wide lg:tracking-normal font-bold text-veryDarkGrayishCyan lg:text-2xl text-lg md:text-3xl">
+            <h3 className="tracking-wide hover:text-desaturatedDarkCyan cursor-pointer lg:tracking-normal font-bold text-veryDarkGrayishCyan lg:text-2xl text-lg md:text-3xl">
               {job.position}
             </h3>
             <div className="flex items-center md:text-lg lg:text-base tracking-wider gap-1 text-darkGrayishCyan">
@@ -74,7 +74,7 @@ function Job({ job, addFilter }) {
           {categoriesArr.map((category, index) => (
             <span
               key={index}
-              className="bg-filterTablets py-1 drop-shadow-sm px-3 rounded-md cursor-pointer"
+              className="bg-filterTablets hover:text-white hover:bg-desaturatedDarkCyan transition-all duration-200 ease-in-out py-1 drop-shadow-sm px-3 rounded-md cursor-pointer"
               onClick={() => {
                 addFilter(category);
               }}

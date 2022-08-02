@@ -16,7 +16,7 @@ function Search({ filters, deleteFilter, clearFilters }) {
                 </span>
                 <span
                   onClick={() => deleteFilter(category)}
-                  className="bg-desaturatedDarkCyan cursor-pointer text-white rounded-r-md p-2"
+                  className="bg-desaturatedDarkCyan hover:bg-veryDarkGrayishCyan transition-all duration-200 ease-in-out cursor-pointer text-white rounded-r-md p-2"
                 >
                   X
                 </span>
@@ -25,7 +25,7 @@ function Search({ filters, deleteFilter, clearFilters }) {
           </div>
           <button
             onClick={() => clearFilters()}
-            className="text-darkGrayishCyan text-xl ml-auto font-bold tracking-wide"
+            className="text-darkGrayishCyan hover:text-desaturatedDarkCyan hover:underline text-xl ml-auto font-bold tracking-wide"
           >
             Clear
           </button>
