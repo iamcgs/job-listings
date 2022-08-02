@@ -22,7 +22,7 @@ function Job({ job, addFilter }) {
 
   return (
     <>
-      <div className="relative flex px-8 rounded-lg bg-lightGrayishCyan pt-8 md:pt-12 pb-6 flex-col gap-2 lg:flex-row lg:items-center">
+      <div className="relative flex px-8 rounded-lg bg-white pt-8 md:pt-12 pb-6 flex-col gap-2 lg:flex-row lg:items-center">
         <div className="absolute lg:hidden -top-[25px] md:-top-[35px]">
           <img
             src={job.logo}
